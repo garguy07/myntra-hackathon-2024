@@ -1,0 +1,30 @@
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('./assets/landing-page-bg-2.jpg'); /* Adjust the path if necessary */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .landing-page-title {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .landing-page-subtitle {
+    padding: 15px;
+    font-size: 30px;
+  }
+  
