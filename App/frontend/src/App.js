@@ -1,12 +1,15 @@
+// src/App.js
 import React from 'react';
 import Navbar from './navbar';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import img1 from './assets/red_dress.jpg';
 import img2 from './assets/virtual_tryon.jpg';
+import TrendAI from './trendai';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <div className="landing-page">
         <div className='landing-page-title'>Style.AI</div>
@@ -17,7 +20,9 @@ function App() {
           <h1>Create designs based on latest trends.</h1>
           <p>Input the type of garment you want to generate designs for along with a couple of other specifications and let TrendAI do its magic.</p>
           <div className="button1-container">
-            <button className="button1">GO TO TRENDAI</button>
+            <Link to="/trendai">
+              <button className="button1">GO TO TRENDAI</button>
+            </Link>
           </div>
         </div>
         <div className="image-container">
@@ -36,7 +41,18 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/trendai" element={<TrendAI />} />
+      </Routes>
+    </Router>
   );
 }
 

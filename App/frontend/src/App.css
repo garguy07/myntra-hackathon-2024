@@ -1,62 +1,72 @@
 /* App.css */
 .App {
-    text-align: center;
-  }
-  
-  .landing-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    background-image: url('./assets/landing-page-bg-2.jpg'); /* Adjust the path if necessary */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-  }
-  
-  .landing-page-title {
-    font-family: 'Lobster', cursive;
-    font-size: 50px;
-    font-weight: bold;
-  }
-  
-  .landing-page-subtitle {
-    padding: 15px;
-    font-size: 30px;
-  }
-  
-  .scrollable-page {
-    height: 100vh; /* Full viewport height for the blank page */
-    background-color: #f37ab5; /* Optional: set a background color */
-    display: flex;
-    align-items: center;
-    justify-content: right;
-  }
+  text-align: center;
+}
 
-  .scrollable-page-2 {
-    height: 100vh; /* Full viewport height for the blank page */
-    background-color: #FE9329; /* Optional: set a background color */
-    display: flex;
-    align-items: center;
-    justify-content: left;
-  }
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url('./assets/landing-page-bg-2.jpg');
+  /* Adjust the path if necessary */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
 
-  .image-container {
-    max-width: 50%; /* Optional: adjust width */
-  }
-  
-  .right-side-image {
-    width: 100%;
-    height: 100vh; /* Maintain aspect ratio */
-    object-fit: cover; /* Optional: cover the container */
-  }
+.landing-page-title {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.landing-page-subtitle {
+  padding: 15px;
+  font-size: 30px;
+}
+
+.scrollable-page {
+  height: 100vh;
+  /* Full viewport height for the blank page */
+  background-color: #f37ab5;
+  /* Optional: set a background color */
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.scrollable-page-2 {
+  height: 100vh;
+  /* Full viewport height for the blank page */
+  background-color: #FE9329;
+  /* Optional: set a background color */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.image-container {
+  max-width: 50%;
+  /* Optional: adjust width */
+}
+
+.right-side-image {
+  width: 100%;
+  height: 100vh;
+  /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Optional: cover the container */
+}
 
 
 .text-container {
-  max-width: 50%; /* Adjust width as needed */
+  max-width: 50%;
+  /* Adjust width as needed */
   padding-left: 3.5%;
   padding-right: 3%;
   text-align: left;
@@ -64,27 +74,37 @@
 }
 
 .button1-container {
-  margin-top: 20px; /* Optional: add margin for spacing */
+  margin-top: 20px;
+  /* Optional: add margin for spacing */
 }
 
 .button1 {
-  background-color: #d8d8d8; /* White background */
-  color: black; /* Black text */
+  background-color: #d8d8d8;
+  /* White background */
+  color: black;
+  /* Black text */
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
+  margin-top: 2%;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow */
-  border: none; /* Remove default button border */
-  transition: background-color 0.3s ease; /* Smooth transition */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  /* Adds a shadow */
+  border: none;
+  /* Remove default button border */
+  /*have a smooth enlargement*/
+  transition: background-color 0.3s, transform 0.3s;
+  /* Smooth transition */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
 
 .button1:hover {
-  background-color: #c7c7c7; /* Change background color on hover */
+  background-color: #c7c7c7;
+  /*enlarge the button slightly on hover*/
+  transform: scale(1.1);
 }
