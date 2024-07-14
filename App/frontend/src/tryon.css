@@ -1,0 +1,103 @@
+/* src/trendai.css */
+.tryon-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('./assets/pink_cloth_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.tryon-title {
+    font-size: 60px;
+    color: #000000;
+    text-align: center;
+}
+
+.tryon-subtitle {
+    padding: 0% 10%;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.fashionate-button {
+    padding: 10px 20px;
+    font-size: 27px;
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: #580088; /* Light pink background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 45px; /* Space above the button */
+    transition: transform 0.3s; /* Smooth transition for background and transform */
+}
+
+.fashionate-button:hover {
+    transform: scale(1.1); /* Enlarge the button */
+}
+
+
+
+.image-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px; /* Space between images */
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #757575; /* Add a border around the image selection box */
+}
+
+
+.selectable-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    border: 2px solid; /* Default border */
+    border-color: rgb(189, 189, 189);
+    border-radius: 10px;
+    transition: border 0.3s; /* Smooth border transition */
+}
+
+.selectable-image.selected {
+    border: 2px solid #950061; /* Highlight border for selected image */
+}
+
+/* Add this to your CSS file */
+.upload-button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #a24bff; /* Customize as needed */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block; /* Make label behave like a button */
+    text-align: center;
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.upload-button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Add this to your CSS file */
+.uploaded-image-name {
+    margin-top: 7px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    width: 100%;
+}

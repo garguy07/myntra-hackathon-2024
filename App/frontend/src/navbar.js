@@ -10,8 +10,16 @@ function Navbar() {
       <div className="navbar-logo">
         <img src={logo} alt="Logo" />
       </div>
-      <div className='Myntra'>Myntra</div>
-      <div className="navbar-title">Style.AI</div>
+      <div className='Myntra'>
+        <Link to="/">
+          <button className="Myntra">Myntra</button>
+        </Link>
+      </div>
+      <div className="navbar-container">
+        <Link to="/">
+          <button className="navbar-title">Style.AI</button>
+        </Link>
+      </div>
       <div className="navbar-buttons">
         <Link to="/trendai">
           <button className="navbar-button">TrendAI</button>

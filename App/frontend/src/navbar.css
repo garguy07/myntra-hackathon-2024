@@ -16,14 +16,26 @@
   height: 35px;
 }
 
-.navbar-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
+.navbar-title {
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Georgia', 'Times New Roman', Times, serif; /* Use a consistent font */
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 0 50px; /* Adjust margin if needed */
+  background-color: black;
+  cursor: pointer;
+}
+
 
 .navbar-buttons {
   display: flex;
@@ -68,5 +80,6 @@
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 50px;
+  background-color: black;
   cursor: pointer;
 }

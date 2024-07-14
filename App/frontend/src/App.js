@@ -6,6 +6,7 @@ import './App.css';
 import img1 from './assets/red_dress.jpg';
 import img2 from './assets/virtual_tryon.jpg';
 import TrendAI from './trendai';
+import TryOn from './tryon';
 
 function Home() {
   return (
@@ -37,7 +38,9 @@ function Home() {
           <h1>Imagining how it would look on you?</h1>
           <p>Thinking about how a dress would look on you? Try the virtual try-on. Upload a full length image of yours and choose a garment from our collection to get to try it out, all within the comfort of your home.</p>
           <div className="button1-container">
-            <button className="button1">GO TO TRYON</button>
+            <Link to="/tryon">
+              <button className="button1">GO TO TRYON</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -51,6 +54,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/trendai" element={<TrendAI />} />
+        <Route path="/tryon" element={<TryOn />} />
       </Routes>
     </Router>
   );
