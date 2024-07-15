@@ -1,4 +1,4 @@
-# Introduction
+# Website
 
 In order to run the website, follow the steps given below:
 - Clone this repository
