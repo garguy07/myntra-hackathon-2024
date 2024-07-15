@@ -1,7 +1,9 @@
 # Introduction
 
-This repository contains the code to the Frontend and TryOn feature of our proposed solution.
+In order to run the website, follow the steps given below:
+- Clone this repository
+- Switch to the frontend folder: `./App/frontend`
+- Make sure you have react and react-router-dom installed into your system.
+- Run the command `npm start` to launch the website.
 
-The App contains the code to the website.
-
-The TrendAI contains a Jupyter notebook which has the code for the Trend Generation feature.
+The website will be visible on your local system.
