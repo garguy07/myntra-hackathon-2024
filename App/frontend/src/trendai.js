@@ -81,10 +81,12 @@ function TrendAI() {
             placeholder="For example, Barbie..."
           />
         </div>
-
-        <button className="fashionate-button" onClick={handleFashionateClick}>
-          Fashionate
-        </button>
+        <div className='fashionate-button-container'>
+          <button className="fashionate-button" onClick={handleFashionateClick}>
+            Fashionate
+          </button>
+        </div>
+        
       </div>
     </>
   );

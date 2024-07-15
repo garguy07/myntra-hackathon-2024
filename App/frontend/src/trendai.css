@@ -15,6 +15,7 @@
 
 .trendai-title {
     font-size: 60px;
+    margin-top: 80px;
     color: #000000;
     text-align: center;
 }
@@ -32,6 +33,7 @@
     justify-content: center;
     align-items: center;
     gap: 30%;
+    margin-top: 00px;
     margin-bottom: 20px;
 }
 
@@ -74,7 +76,7 @@
 .trend-input {
     display: flex;
     align-items: center;
-    margin-top: 60px; /* Space above the input */
+    margin-top: 30px; /* Space above the input */
 }
 
 .trend-input label {
@@ -102,10 +104,15 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 80px; /* Space above the button */
+    margin-top: 20px; /* Space above the button */
     transition: transform 0.3s; /* Smooth transition for background and transform */
 }
 
 .fashionate-button:hover {
     transform: scale(1.1); /* Enlarge the button */
+}
+
+.fashionate-button-container {
+    margin-top: 30px;
+    padding: 7px;
 }
